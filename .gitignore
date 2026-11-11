@@ -1,0 +1,33 @@
+# Datasets and generated results (large, regenerable)
+data/
+results_*/
+pointclouds*/
+
+# Python environment and caches
+liteflow_env/
+__pycache__/
+*.pyc
+
+# Large generated/downloaded files
+*.npy
+*.ply
+*.flo
+*.pt
+*.pth
+
+# ORB-SLAM3: backup copy and build outputs (supervisor rebuilds these)
+ORB_SLAM3_backup/
+ORB_SLAM3/build/
+ORB_SLAM3/lib/
+ORB_SLAM3/Thirdparty/*/build/
+ORB_SLAM3/Thirdparty/*/lib/
+ORB_SLAM3/Examples/RGB-D/rgbd_tum
+ORB_SLAM3/Vocabulary/ORBvoc.txt
+
+# Extra folders found in this project
+ORB_SLAM3_dynamic/
+result_*/
+output_images/
+opticalScene_*/
+opticalflowmask_*/
+images/my_video/
