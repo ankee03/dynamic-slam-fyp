@@ -12,6 +12,8 @@ A lightweight hybrid pipeline that stops moving objects from corrupting RGB-D SL
 5. Dual-signal motion confirmation (residual flow + scene-flow depth change) decides which instances are really moving.
 6. Binary dynamic masks, named by RGB timestamp, are loaded by a modified ORB-SLAM3, which discards keypoints on dynamic pixels.
 
+   <img width="2176" height="1409" alt="SEGMENTATION MODEL" src="https://github.com/user-attachments/assets/969de1bd-3cb0-4288-99bb-d620ec7a7cab" />
+
 ## Results (ATE RMSE, TUM RGB-D fr3)
 
 | Sequence | Baseline ORB-SLAM3 | Proposed | Improvement |
