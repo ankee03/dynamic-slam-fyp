@@ -1,4 +1,4 @@
-# Dynamic Object-Aware RGB-D SLAM
+# Dynamic Object Segmentation Using Lightweight Deep Learning-Based Optical Flow in Visual SLAM Algorithm
 
 Final Year Project, Universiti Teknikal Malaysia Melaka (UTeM).
 
@@ -24,18 +24,14 @@ A lightweight hybrid pipeline that stops moving objects from corrupting RGB-D SL
 On the sitting sequences (almost no motion) the change stays within about 1 cm of the baseline.
 
 ## Repository contents
-- `scene_flow_tum.py`: segmentation pipeline that generates the dynamic masks
+- `mask.py`: segmentation pipeline that generates the dynamic masks
 - `run.py`: LiteFlowNet inference
-- `generate_associations.py`: builds association files for ORB-SLAM3
-- `plot_trajectory.py`, `plot_rpe_overtime.py`: ATE and RPE plots
-- `generate_pointcloud.py`: dense point-cloud comparison, with and without masks
+- `association.py`: builds association files for ORB-SLAM3
+- `trajplot.py`, `plot_rpe_graph.py`: ATE and RPE plots
+- `visualMap.py`: dense point-cloud comparison, with and without masks
 - `ORB_SLAM3/`: ORB-SLAM3 with dynamic mask support (modified files: Frame.h/.cc, Tracking.h/.cc, System.h/.cc, Examples/RGB-D/rgbd_tum.cc)
-- `USER_MANUAL.md`: full setup and run instructions
 
 Not included: TUM datasets, generated masks, compiled binaries. Model weights (LiteFlowNet, YOLOv8n-seg) are downloaded automatically on first run.
-
-## Getting started
-Create a Python venv, install the dependencies, build ORB-SLAM3, then follow USER_MANUAL.md step by step.
 
 ## Acknowledgements
 - ORB-SLAM3 (Campos et al., 2021)
