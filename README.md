@@ -25,6 +25,8 @@ A lightweight hybrid pipeline that stops moving objects from corrupting RGB-D SL
 
 On the sitting sequences (almost no motion) the change stays within about 1 cm of the baseline.
 
+   <img width="1861" height="599" alt="RGB FRAME (2)" src="https://github.com/user-attachments/assets/e57cbad4-3e0e-4fc2-9308-8b3880e7516f" />
+
 ## Repository contents
 - `mask.py`: segmentation pipeline that generates the dynamic masks
 - `run.py`: LiteFlowNet inference
