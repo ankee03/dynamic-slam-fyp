@@ -14,11 +14,15 @@ A lightweight hybrid pipeline that stops moving objects from corrupting RGB-D SL
 
    <img width="2176" height="1409" alt="SEGMENTATION MODEL" src="https://github.com/user-attachments/assets/969de1bd-3cb0-4288-99bb-d620ec7a7cab" />
 
-## Results
+## Results (TUM RGB-D fr3)
 
 Segmentation Outcome:
+<img width="1020" height="707" alt="RGB FRAME (1)" src="https://github.com/user-attachments/assets/1e4dc1a7-52a3-4862-a403-4bec018ee0f7" />
 
-ATE RMSE, TUM RGB-D fr3:
+ORB-SLAM3:
+<img width="1972" height="872" alt="RGB FRAME (3)" src="https://github.com/user-attachments/assets/b6db45f3-30fc-427b-b3b1-f4157762a97c" />
+
+ATE RMSE:
 | Sequence | Baseline ORB-SLAM3 | Proposed | Improvement |
 |---|---|---|---|
 | walking_xyz | 0.7166 m | 0.0153 m | 97.9% |
